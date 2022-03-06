@@ -1,0 +1,12 @@
+## git ingore rules
+
+## project
+/auto-save-list
+/elpa
+/custom.el
+
+## mac
+**/.DS_Store
+
+## vscode 
+.vscode
