@@ -3,10 +3,12 @@
 ## project
 /auto-save-list
 /elpa
+
+## useless
+.vscode
+.DS_Store
+*~
+
+## custom
 /custom.el
 
-## mac
-**/.DS_Store
-
-## vscode 
-.vscode
