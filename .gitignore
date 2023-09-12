@@ -1,0 +1,12 @@
+# ignore files
+
+projects
+custom.el
+*.eld
+
+# ignore dirs
+
+/elpa
+/auto-save-list
+/tree-sitter
+
