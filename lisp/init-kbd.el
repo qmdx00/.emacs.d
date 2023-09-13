@@ -14,9 +14,13 @@
   ("d" delete-frame "delete frame")
   ("n" make-frame-command "new frame"))
 
-;; graphic keybindings
+;; graphic kbd
 (when (display-graphic-p)
   (global-set-key (kbd "s-b") 'switch-to-buffer)
   (global-set-key (kbd "s-<return>") 'toggle-frame-fullscreen))
+
+;; global kdb
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-p") 'smex-major-mode-commands)
 
 (provide 'init-kbd)

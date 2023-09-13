@@ -12,7 +12,7 @@
 (require 'init-system)
 (require 'init-package)
 (require 'init-proxy)
+(require 'init-ide)
 (require 'init-kbd)
 (require 'init-ui)
-(require 'init-ide)
 (require 'init-hooks)

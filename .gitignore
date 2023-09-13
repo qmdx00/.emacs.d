@@ -1,12 +1,14 @@
 # ignore files
 
+recentf
+smex-items
 projects
 custom.el
 *.eld
 
 # ignore dirs
 
-/elpa
-/auto-save-list
-/tree-sitter
-
+elpa/
+auto-save-list/
+tree-sitter/
+transient/

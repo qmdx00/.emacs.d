@@ -23,4 +23,6 @@
   :hook ((go-mode) . eglot-ensure)
   :bind (("s-l" . eglot-format)))
 
+(use-package smex)
+
 (provide 'init-ide)
