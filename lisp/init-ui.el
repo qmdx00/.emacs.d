@@ -4,6 +4,8 @@
 ;; UI config
 ;;
 
+(load-theme 'leuven-dark t)
+
 ;; font face
 (use-package fontaine
   :config (setq fontaine-presets

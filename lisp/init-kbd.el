@@ -20,7 +20,6 @@
   (global-set-key (kbd "s-<return>") 'toggle-frame-fullscreen))
 
 ;; global kdb
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-p") 'smex-major-mode-commands)
+(global-set-key (kbd "M-x") 'counsel-M-x)
 
 (provide 'init-kbd)
