@@ -4,8 +4,10 @@
 ;; Keybindings
 ;;
 
+;; hydra
 (use-package hydra)
 
+;; hydra kbd
 (global-set-key (kbd "C-c f") 'hydra-frame/body)
 
 (defhydra hydra-frame (:exit t)
@@ -21,5 +23,7 @@
 
 ;; global kdb
 (global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "M-n") 'switch-to-next-buffer)
+(global-set-key (kbd "M-p") 'switch-to-prev-buffer)
 
 (provide 'init-kbd)
