@@ -20,6 +20,11 @@
   :bind (("C-s" . swiper)
          ("C-r" . swiper)))
 
+;; company
+(use-package company
+  :hook (after-init . global-company-mode)
+  :config (setq company-dabbrev-downcase nil))
+
 ;; shell env
 (use-package exec-path-from-shell
   :init (setq exec-path-from-shell-variables '("PATH" "MANPATH" "GOPATH" "LANG"))

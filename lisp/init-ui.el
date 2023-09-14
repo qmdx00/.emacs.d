@@ -9,7 +9,7 @@
 ;; font face
 (use-package fontaine
   :config (setq fontaine-presets
-		'((regular :default-height 150)
+		'((regular :default-height 130)
 		  (t :default-family "Jetbrains Mono")))
   (when (display-graphic-p)
     (fontaine-set-preset
