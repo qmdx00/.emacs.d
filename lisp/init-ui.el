@@ -4,7 +4,9 @@
 ;; UI config
 ;;
 
-(load-theme 'leuven-dark t)
+;; theme
+(use-package zerodark-theme
+  :init (load-theme 'zerodark t))
 
 ;; font face
 (use-package fontaine

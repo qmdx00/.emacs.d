@@ -19,7 +19,9 @@
 ;; graphic kbd
 (when (display-graphic-p)
   (global-set-key (kbd "s-b") 'switch-to-buffer)
-  (global-set-key (kbd "s-<return>") 'toggle-frame-fullscreen))
+  (global-set-key (kbd "s-<return>") 'toggle-frame-fullscreen)
+  (global-set-key (kbd "s-<mouse-1>") 'xref-find-definitions-at-mouse)
+  (global-set-key (kbd "s-<mouse-3>") 'xref-find-references-at-mouse))
 
 ;; global kdb
 (global-set-key (kbd "M-x") 'counsel-M-x)
