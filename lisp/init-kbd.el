@@ -10,6 +10,7 @@
 ;; hydra kbd
 (global-set-key (kbd "C-c f") 'hydra-frame/body)
 
+;; keybindings
 (defhydra hydra-frame (:exit t)
   "Emacs Frame Management."
   ("f" other-frame "other frame")
@@ -27,5 +28,10 @@
 (global-set-key (kbd "M-x") 'counsel-M-x)
 (global-set-key (kbd "M-n") 'switch-to-next-buffer)
 (global-set-key (kbd "M-p") 'switch-to-prev-buffer)
+
+;; which key
+(use-package which-key
+  :hook (after-init . which-key-mode)
+  :config (setq which-key-popup-type 'minibuffer))
 
 (provide 'init-kbd)

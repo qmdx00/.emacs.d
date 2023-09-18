@@ -4,6 +4,9 @@
 ;; IDE settings
 ;;
 
+;; ripgrep
+(use-package rg)
+
 ;; ivy
 (use-package ivy
   :diminish ivy-mode
