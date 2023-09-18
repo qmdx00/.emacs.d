@@ -10,12 +10,12 @@
 ;; ivy
 (use-package ivy
   :diminish ivy-mode
-  :hook (after-init . ivy-mode))
+  :init (ivy-mode))
 
 ;; counsel
 (use-package counsel
   :after ivy
-  :config (counsel-mode))
+  :init (counsel-mode))
 
 ;; swiper
 (use-package swiper
@@ -23,9 +23,16 @@
   :bind (("C-s" . swiper)
          ("C-r" . swiper)))
 
+;; ace window
+(use-package ace-window
+  :bind (("C-x o" . 'ace-window)))
+
+;; avy
+(use-package avy)
+
 ;; company
 (use-package company
-  :hook (after-init . global-company-mode)
+  :init (global-company-mode)
   :config (setq company-dabbrev-downcase nil))
 
 ;; shell env

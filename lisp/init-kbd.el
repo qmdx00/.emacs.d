@@ -9,6 +9,7 @@
 
 ;; hydra kbd
 (global-set-key (kbd "C-c f") 'hydra-frame/body)
+(global-set-key (kbd "C-c s") 'hydra-search/body)
 
 ;; keybindings
 (defhydra hydra-frame (:exit t)
@@ -17,21 +18,23 @@
   ("d" delete-frame "delete frame")
   ("n" make-frame-command "new frame"))
 
+(defhydra hydra-search (:exit t)
+  "Emacs Search Keys"
+  ("s" swiper "search buffer")
+  ("g" counsel-git-grep "search git project")
+  ("d" counsel-rg "serach directory"))
+
 ;; graphic kbd
 (when (display-graphic-p)
   (global-set-key (kbd "s-b") 'switch-to-buffer)
   (global-set-key (kbd "s-<return>") 'toggle-frame-fullscreen)
   (global-set-key (kbd "s-<mouse-1>") 'xref-find-definitions-at-mouse)
-  (global-set-key (kbd "s-<mouse-3>") 'xref-find-references-at-mouse))
+  (global-set-key (kbd "s-<mouse-3>") 'xref-find-references-at-mouse)
+  (global-set-key (kbd "C-'") 'avy-goto-char-2))
 
 ;; global kdb
 (global-set-key (kbd "M-x") 'counsel-M-x)
 (global-set-key (kbd "M-n") 'switch-to-next-buffer)
 (global-set-key (kbd "M-p") 'switch-to-prev-buffer)
-
-;; which key
-(use-package which-key
-  :hook (after-init . which-key-mode)
-  :config (setq which-key-popup-type 'minibuffer))
 
 (provide 'init-kbd)
