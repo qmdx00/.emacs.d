@@ -14,7 +14,6 @@
   (write-region "" nil custom-file)
   (load-file custom-file))
 
-
 ;; performance
 (if (display-graphic-p)
     (progn (tool-bar-mode 0)

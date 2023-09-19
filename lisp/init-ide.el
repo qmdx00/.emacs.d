@@ -61,6 +61,9 @@
   :hook ((go-mode) . eglot-ensure)
   :bind (("s-l" . eglot-format)))
 
+;; magit
+(use-package magit)
+
 ;; git diff
 (use-package diff-hl
   :hook (emacs-startup . (lambda ()
