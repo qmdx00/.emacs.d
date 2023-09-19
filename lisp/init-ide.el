@@ -46,6 +46,9 @@
 ;; format
 (use-package format-all)
 
+;; markdown
+(use-package markdown-mode)
+
 ;; go mode
 (use-package go-mode)
 
@@ -57,5 +60,14 @@
 (use-package eglot
   :hook ((go-mode) . eglot-ensure)
   :bind (("s-l" . eglot-format)))
+
+;; git diff
+(use-package diff-hl
+  :hook (emacs-startup . (lambda ()
+			   (when (display-graphic-p)
+			     (global-diff-hl-show-hunk-mouse-mode))
+			   (global-diff-hl-mode)))
+  :hook (diff-hl-mode . diff-hl-margin-mode)
+  :hook (diff-hl-mode . diff-hl-flydiff-mode))
 
 (provide 'init-ide)
