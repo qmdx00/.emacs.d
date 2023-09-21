@@ -23,6 +23,23 @@
   :bind (("C-s" . swiper)
          ("C-r" . swiper)))
 
+;; ivy posframe
+(use-package ivy-posframe
+  :after ivy
+  :init (ivy-posframe-mode)
+  :config
+  (setq ivy-posframe-parameters
+	'((left-fringe . 1)
+	  (right-fringe . 1)))
+  (setq ivy-posframe-width 120
+	ivy-posframe-border-width 10)
+  (setq ivy-posframe-display-functions-alist
+        '((swiper          . ivy-posframe-display-at-window-center)
+          (complete-symbol . ivy-posframe-display-at-point)
+          (counsel-M-x     . ivy-posframe-display-at-frame-center)
+          (t               . ivy-posframe-display-at-frame-center))))
+
+
 ;; ace window
 (use-package ace-window
   :bind (("C-x o" . 'ace-window)))
