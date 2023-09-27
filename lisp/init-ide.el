@@ -71,7 +71,14 @@
 
 ;; slime
 (use-package slime
-  :config (setq inferior-lisp-program "sbcl"))
+  :config
+  (setq inferior-lisp-program "sbcl")
+  (slime-setup '(slime-fancy slime-company)))
+
+
+(use-package slime-company
+  :after (slime company)
+  :config (setq slime-company-completion 'fuzzy))
 
 ;; eglot
 (use-package eglot
