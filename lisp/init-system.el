@@ -11,14 +11,14 @@
 
 ;; load custom file
 (unless (file-exists-p custom-file)
-  (write-region "" nil custom-file)
-  (load-file custom-file))
+  (write-region "" nil custom-file))
+(load-file custom-file)
 
 ;; performance
-(if (display-graphic-p)
-    (progn (tool-bar-mode 0)
-           (scroll-bar-mode 0))
-  (menu-bar-mode 0))
+(when (display-graphic-p)
+  (tool-bar-mode 0)
+  (scroll-bar-mode 0))
+(menu-bar-mode 0)
 
 ;; auto save and backup
 (setq create-lockfiles nil
