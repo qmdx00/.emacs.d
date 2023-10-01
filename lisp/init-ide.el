@@ -40,12 +40,18 @@
           (t               . ivy-posframe-display-at-frame-center))))
 
 
+
 ;; ace window
 (use-package ace-window
-  :bind (("C-x o" . 'ace-window)))
+  :bind (("C-x o" . ace-window)))
 
 ;; avy
-(use-package avy)
+(use-package avy
+  :bind (("C-'" . avy-goto-char-2)))
+
+;; paredit
+(use-package paredit
+  :hook (((lisp-mode emacs-lisp-mode) . paredit-mode)))
 
 ;; company
 (use-package company
@@ -57,7 +63,7 @@
   :init (setq exec-path-from-shell-variables '("PATH" "MANPATH" "GOPATH" "LANG"))
   :hook (after-init . exec-path-from-shell-initialize))
 
-;; editorconfig support
+;; editorconfig
 (use-package editorconfig)
 
 ;; format
@@ -71,11 +77,12 @@
 
 ;; slime
 (use-package slime
+  :hook (slime-repl-mode . paredit-mode)
   :config
   (setq inferior-lisp-program "sbcl")
   (slime-setup '(slime-fancy slime-company)))
 
-
+;; slime company
 (use-package slime-company
   :after (slime company)
   :config (setq slime-company-completion 'fuzzy))

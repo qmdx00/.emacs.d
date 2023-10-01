@@ -8,6 +8,4 @@
 
 (add-hook 'prog-mode-hook 'format-all-mode)
 
-(add-hook 'emacs-lisp-mode-hook 'electric-indent-mode)
-
 (provide 'init-hooks)
