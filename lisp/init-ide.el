@@ -50,7 +50,15 @@
   :bind (("C-'" . avy-goto-char-2)))
 
 ;; paredit
+;; https://q3yi.me/post/7_a-more-natural-keybinding-setting-in-paredit/
 (use-package paredit
+  :bind (:map paredit-mode-map
+	      ("M-<up>" . 'paredit-splice-sexp)
+	      ("M-<down>" . 'paredit-wrap-round)
+	      ("M-<left>" . 'paredit-forward-barf-sexp)
+	      ("M-<right>" . 'paredit-backward-barf-sexp)
+	      ("C-<left>" . 'paredit-backward-slurp-sexp)
+	      ("C-<right>" . 'paredit-forward-slurp-sexp))
   :hook (((lisp-mode emacs-lisp-mode) . paredit-mode)))
 
 ;; company
