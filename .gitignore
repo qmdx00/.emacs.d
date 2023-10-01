@@ -4,6 +4,7 @@ recentf
 smex-items
 projects
 custom.el
+.mc-lists.el
 *.eld
 
 # ignore dirs

@@ -16,7 +16,8 @@
   "Emacs Frame Management."
   ("f" other-frame "other frame")
   ("d" delete-frame "delete frame")
-  ("n" make-frame-command "new frame"))
+  ("n" make-frame-command "new frame")
+  ("t" tear-off-window "tearoff window"))
 
 (defhydra hydra-search (:exit t)
   "Emacs Search Keys"
@@ -35,5 +36,8 @@
 (global-set-key (kbd "M-x") 'counsel-M-x)
 (global-set-key (kbd "M-n") 'switch-to-next-buffer)
 (global-set-key (kbd "M-p") 'switch-to-prev-buffer)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-SPC") 'mc/mark-all-like-this)
 
 (provide 'init-kbd)

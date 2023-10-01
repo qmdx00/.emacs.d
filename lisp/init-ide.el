@@ -39,7 +39,8 @@
           (counsel-M-x     . ivy-posframe-display-at-frame-center)
           (t               . ivy-posframe-display-at-frame-center))))
 
-
+;; multiple cursors
+(use-package multiple-cursors)
 
 ;; ace window
 (use-package ace-window
