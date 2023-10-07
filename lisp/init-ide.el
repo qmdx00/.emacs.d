@@ -78,6 +78,9 @@
 ;; format
 (use-package format-all)
 
+;; yaml mode
+(use-package yaml-mode)
+
 ;; markdown
 (use-package markdown-mode)
 
