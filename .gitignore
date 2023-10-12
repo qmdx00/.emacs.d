@@ -10,7 +10,10 @@ custom.el
 # ignore dirs
 
 elpa/
+site-lisp/
 auto-save-list/
 tree-sitter/
 transient/
 games/
+elfeed/
+url/

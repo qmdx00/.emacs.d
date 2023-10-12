@@ -13,6 +13,7 @@
 (require 'init-package)
 (require 'init-proxy)
 (require 'init-ide)
+(require 'init-tool)
 (require 'init-kbd)
 (require 'init-ui)
 (require 'init-hooks)

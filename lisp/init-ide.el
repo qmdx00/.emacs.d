@@ -116,4 +116,5 @@
   :hook (diff-hl-mode . diff-hl-margin-mode)
   :hook (diff-hl-mode . diff-hl-flydiff-mode))
 
+
 (provide 'init-ide)
