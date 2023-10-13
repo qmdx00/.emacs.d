@@ -29,10 +29,10 @@
   :init (ivy-posframe-mode)
   :config
   (setq ivy-posframe-parameters
-	'((left-fringe . 1)
-	  (right-fringe . 1)))
+        '((left-fringe . 1)
+          (right-fringe . 1)))
   (setq ivy-posframe-width 120
-	ivy-posframe-border-width 10)
+        ivy-posframe-border-width 10)
   (setq ivy-posframe-display-functions-alist
         '((swiper          . ivy-posframe-display-at-window-center)
           (complete-symbol . ivy-posframe-display-at-point)
@@ -54,12 +54,12 @@
 ;; https://q3yi.me/post/7_a-more-natural-keybinding-setting-in-paredit/
 (use-package paredit
   :bind (:map paredit-mode-map
-	      ("M-<up>" . 'paredit-splice-sexp)
-	      ("M-<down>" . 'paredit-wrap-round)
-	      ("M-<left>" . 'paredit-forward-barf-sexp)
-	      ("M-<right>" . 'paredit-backward-barf-sexp)
-	      ("C-<left>" . 'paredit-backward-slurp-sexp)
-	      ("C-<right>" . 'paredit-forward-slurp-sexp))
+              ("M-<up>" . 'paredit-splice-sexp)
+              ("M-<down>" . 'paredit-wrap-round)
+              ("M-<left>" . 'paredit-forward-barf-sexp)
+              ("M-<right>" . 'paredit-backward-barf-sexp)
+              ("C-<left>" . 'paredit-backward-slurp-sexp)
+              ("C-<right>" . 'paredit-forward-slurp-sexp))
   :hook (((lisp-mode emacs-lisp-mode) . paredit-mode)))
 
 ;; company
@@ -110,9 +110,9 @@
 ;; git diff
 (use-package diff-hl
   :hook (emacs-startup . (lambda ()
-			   (when (display-graphic-p)
-			     (global-diff-hl-show-hunk-mouse-mode))
-			   (global-diff-hl-mode)))
+                           (when (display-graphic-p)
+                             (global-diff-hl-show-hunk-mouse-mode))
+                           (global-diff-hl-mode)))
   :hook (diff-hl-mode . diff-hl-margin-mode)
   :hook (diff-hl-mode . diff-hl-flydiff-mode))
 
