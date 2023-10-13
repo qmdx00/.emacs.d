@@ -87,7 +87,7 @@
 ;; go mode
 (use-package go-mode)
 
-;; slime
+;; cl slime
 (use-package slime
   :hook (slime-repl-mode . paredit-mode)
   :config
@@ -98,6 +98,10 @@
 (use-package slime-company
   :after (slime company)
   :config (setq slime-company-completion 'fuzzy))
+
+;; chez scheme
+(use-package geiser-chez
+  :hook (geiser-mode . paredit-mode))
 
 ;; eglot
 (use-package eglot
