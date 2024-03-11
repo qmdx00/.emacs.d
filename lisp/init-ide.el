@@ -101,7 +101,10 @@
 
 ;; chez scheme
 (use-package geiser-chez
-  :hook (geiser-mode . paredit-mode))
+  :hook (geiser-mode . paredit-mode)
+  :config (setq scheme-program-name "chez"
+		geiser-chez-binary "chez"
+		geiser-active-implementations '(chez)))
 
 ;; eglot
 (use-package eglot
