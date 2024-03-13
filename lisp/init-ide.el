@@ -106,6 +106,10 @@
 		geiser-chez-binary "chez"
 		geiser-active-implementations '(chez)))
 
+;; racket
+(use-package geiser-racket
+  :hook (geiser-mode . paredit-mode))
+
 ;; eglot
 (use-package eglot
   :hook ((go-mode) . eglot-ensure)
