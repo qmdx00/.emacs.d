@@ -1,11 +1,14 @@
 # ignore files
 
+history
 recentf
 smex-items
 projects
 custom.el
 .mc-lists.el
+tabsession.el
 *.eld
+*\~
 
 # ignore dirs
 
