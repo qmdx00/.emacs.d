@@ -4,6 +4,9 @@
 
 ;; Customize settings
 
+;; emacs backup setting
+(customize-set-variable 'backup-directory-alist '(("." . "~/.emacs.d/backup")))
+
 ;; mode disabled
 (customize-set-variable 'menu-bar-mode nil)
 (customize-set-variable 'flymake-start-on-flymake-mode nil)

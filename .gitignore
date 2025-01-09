@@ -12,6 +12,7 @@ tabsession.el
 
 # ignore dirs
 
+backup/
 elpa/
 site-lisp/
 auto-save-list/
