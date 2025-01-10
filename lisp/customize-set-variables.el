@@ -25,6 +25,9 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (set-frame-font "Jetbrains Mono" nil t)
 
+(when (locate-library "sly")
+  (setq inferior-lisp-program "ros -Q run"))
+
 ;;; _
 (provide 'customize-set-variables)
 ;;; customize-set-variables.el ends here
