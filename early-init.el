@@ -1,6 +1,7 @@
 ;;; early-init.el -*- lexical-binding: t; -*-
 
 (setq crafted-package-perform-stale-archive-check nil)
+(setq native-comp-async-report-warnings-errors nil)
 
 (load
  (expand-file-name
