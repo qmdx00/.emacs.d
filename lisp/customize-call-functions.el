@@ -2,8 +2,12 @@
 ;; -*- coding: utf-8 -*-
 ;;
 
+;; tree-sitter
 (crafted-ide-eglot-auto-ensure-all)
 (crafted-ide-configure-tree-sitter '(go gomod clojure rust python))
+
+;; setting theme
+(load-theme 'wombat t)
 
 ;;; _
 (provide 'customize-call-functions)
