@@ -7,7 +7,8 @@
 (crafted-ide-configure-tree-sitter '(go gomod clojure rust python))
 
 ;; setting theme
-(load-theme 'wombat t)
+(when (display-graphic-p)
+  (load-theme 'wombat t))
 
 ;;; _
 (provide 'customize-call-functions)
