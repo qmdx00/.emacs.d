@@ -35,6 +35,7 @@
 ;;; Configuration phase
 (require 'crafted-defaults-config)
 (require 'crafted-startup-config)
+(require 'crafted-updates-config)
 (require 'crafted-osx-config)
 (require 'crafted-speedbar-config)
 (require 'customize-packages-config)

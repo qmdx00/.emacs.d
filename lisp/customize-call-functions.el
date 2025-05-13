@@ -5,6 +5,7 @@
 ;; tree-sitter
 (crafted-ide-eglot-auto-ensure-all)
 (crafted-ide-configure-tree-sitter '(go gomod commonlisp javascript html python))
+(crafted-osx-transparent-titlebar)
 
 ;; setting theme
 (when (display-graphic-p)
