@@ -9,7 +9,7 @@
 
 ;; setting theme
 (when (display-graphic-p)
-  (load-theme 'wombat t))
+  (load-theme 'doom-one-light t))
 
 ;;; _
 (provide 'customize-call-functions)

@@ -3,6 +3,7 @@
 ;;
 
 (add-to-list 'package-selected-packages 'exec-path-from-shell)
+(add-to-list 'package-selected-packages 'doom-themes)
 
 ;;; _
 (provide 'customize-packages)
