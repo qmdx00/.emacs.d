@@ -4,7 +4,7 @@
 
 ;; tree-sitter
 (crafted-ide-eglot-auto-ensure-all)
-(crafted-ide-configure-tree-sitter '(go gomod clojure rust python))
+(crafted-ide-configure-tree-sitter '(go gomod commonlisp javascript html python))
 
 ;; setting theme
 (when (display-graphic-p)
